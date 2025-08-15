@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alus Knödel Seite</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0c5d2c;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: url('ba.png') repeat;
+            border-radius: 0;
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: #e7350f;
+        }
+
+        h1 {
+            color: #0c5d2c;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(12, 93, 44, 0.1);
+        }
+
+        .message {
+            color: #333;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            text-align: left;
+        }
+
+        .highlight {
+            color: #e7350f;
+            font-weight: 600;
+        }
+
+        .knodel-invite {
+            background: #0c5d2c;
+            color: white;
+            padding: 25px;
+            border-radius: 0;
+            margin: 30px 0;
+            box-shadow: 0 5px 10px rgba(12, 93, 44, 0.3);
+        }
+
+        .knodel-invite h2 {
+            color: white;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .contact-info {
+            background: #f8f9fa;
+            border-left: 4px solid #e7350f;
+            padding: 20px;
+            border-radius: 0;
+            margin-top: 25px;
+        }
+
+        .emoji {
+            font-size: 1.5rem;
+            margin: 0 5px;
+        }
+
+        .language-switch {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #e7350f;
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            border: none;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+                margin: 10px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .message {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="language-switch">🏠 Home</a>
+        
+        <img src="knoedel.gif" alt="Knödel Animation" style="max-width: 300px; height: auto; margin-bottom: 30px;">
+        
+        <div class="message">
+            <p><strong>Du hast die Alus Knödel Seite gefunden!</strong></p>
+            <br>
+            <p>Ich hoffe, ihr hattet eine <span class="highlight">fantastische Hochzeit!!!</span></p>
+            <br>
+            <p>Durch den Besuch dieser Seite ladet ihr uns - oder euch zu uns - zum Knödel essen ein!</p>
+            <br>
+            <p>Lass uns aber bitte wissen, wann es euch am besten passt.</p>
+        </div>
+
+        <div class="contact-info">
+            <p><strong>Fragen zum Rezept?</strong></p>
+            <p>Kontaktiere uns gerne jederzeit! 📱</p>
+        </div>
+    </div>
+</body>
+</html>

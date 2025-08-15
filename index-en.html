@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alus Knödel - Choose Language</title>
+    <title>Alus Knödel Page</title>
     <style>
         * {
             margin: 0;
@@ -25,7 +25,7 @@
             background: url('ba.png') repeat;
             border-radius: 0;
             padding: 40px;
-            max-width: 500px;
+            max-width: 600px;
             width: 100%;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
             text-align: center;
@@ -43,44 +43,38 @@
             background: #e7350f;
         }
 
-        .gif-container {
-            margin-bottom: 40px;
+        .message {
+            color: #333;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            text-align: left;
         }
 
-        .gif-container img {
-            max-width: 300px;
-            height: auto;
+        .highlight {
+            color: #e7350f;
+            font-weight: 600;
         }
 
-        .language-buttons {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
+        .contact-info {
+            background: #f8f9fa;
+            border-left: 4px solid #e7350f;
+            padding: 20px;
+            border-radius: 0;
+            margin-top: 25px;
         }
 
-        .language-btn {
+        .language-switch {
+            position: absolute;
+            top: 20px;
+            right: 20px;
             background: #e7350f;
             color: white;
-            padding: 15px 30px;
+            padding: 8px 15px;
             text-decoration: none;
-            font-size: 1.2rem;
+            font-size: 0.9rem;
             border: none;
             cursor: pointer;
-            transition: background-color 0.3s ease;
-            min-width: 150px;
-        }
-
-        .language-btn:hover {
-            background: #d42d0d;
-        }
-
-        .language-btn.deutsch {
-            background: #0c5d2c;
-        }
-
-        .language-btn.deutsch:hover {
-            background: #0a4a24;
         }
 
         @media (max-width: 768px) {
@@ -89,27 +83,31 @@
                 margin: 10px;
             }
             
-            .language-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .language-btn {
-                width: 100%;
-                max-width: 200px;
+            .message {
+                font-size: 1rem;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="gif-container">
-            <img src="knoedel.gif" alt="Knödel Animation">
-        </div>
+        <a href="index.html" class="language-switch">🏠 Home</a>
         
-        <div class="language-buttons">
-            <a href="index-de.html" class="language-btn deutsch">🇩🇪 Deutsch</a>
-            <a href="index-en.html" class="language-btn">🇺🇸 English</a>
+        <img src="knoedel.gif" alt="Knödel Animation" style="max-width: 300px; height: auto; margin-bottom: 30px;">
+        
+        <div class="message">
+            <p><strong>You found Alus Knödel Page!</strong></p>
+            <br>
+            <p>I hope you had a <span class="highlight">fantastic wedding!!!</span></p>
+            <br>
+            <p>By visiting this site you are invited for a free Knödel experience at your or our place.</p>
+            <br>
+            <p>But please let us know what time you would like to eat some Knödel.</p>
+        </div>
+
+        <div class="contact-info">
+            <p><strong>Questions about the recipe?</strong></p>
+            <p>Feel free to contact us anytime! 📱</p>
         </div>
     </div>
 </body>
