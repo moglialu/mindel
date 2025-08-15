@@ -13,7 +13,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #0c5d2c 0%, #0c5d2c 50%, #e7350f 100%);
+            background: #0c5d2c;
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -22,12 +22,12 @@
         }
 
         .container {
-            background: white;
-            border-radius: 20px;
+            background: url('ba.png') repeat;
+            border-radius: 0;
             padding: 40px;
             max-width: 600px;
             width: 100%;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -40,7 +40,7 @@
             left: 0;
             right: 0;
             height: 5px;
-            background: linear-gradient(90deg, #0c5d2c, #e7350f);
+            background: #e7350f;
         }
 
         h1 {
@@ -65,12 +65,12 @@
         }
 
         .knodel-invite {
-            background: linear-gradient(135deg, #0c5d2c, #0c5d2c);
+            background: #0c5d2c;
             color: white;
             padding: 25px;
-            border-radius: 15px;
+            border-radius: 0;
             margin: 30px 0;
-            box-shadow: 0 10px 20px rgba(12, 93, 44, 0.2);
+            box-shadow: 0 5px 10px rgba(12, 93, 44, 0.3);
         }
 
         .knodel-invite h2 {
@@ -83,7 +83,7 @@
             background: #f8f9fa;
             border-left: 4px solid #e7350f;
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 0;
             margin-top: 25px;
         }
 
@@ -110,21 +110,16 @@
 </head>
 <body>
     <div class="container">
-        <h1>🎉 Welcome! 🎉</h1>
+        <img src="knoedel.gif" alt="Knödel Animation" style="max-width: 300px; height: auto; margin-bottom: 30px;">
         
         <div class="message">
             <p><strong>You found Alus Knödel Page!</strong></p>
             <br>
             <p>I hope you had a <span class="highlight">fantastic wedding!!!</span></p>
             <br>
-            <p>By visiting this site you are <span class="highlight">automatically invited</span> to a free Knödel experience at your place.</p>
+            <p>By visiting this site you <span class="highlight">automatically invited</span> us to a free Knödel experience at your place.</p>
             <br>
             <p>But please let us know what time you would like to invite us via the common messenger app.</p>
-        </div>
-
-        <div class="knodel-invite">
-            <h2>🥟 Free Knödel Experience 🥟</h2>
-            <p>We're excited to bring the authentic taste of our family recipe to your home!</p>
         </div>
 
         <div class="contact-info">
