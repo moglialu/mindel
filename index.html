@@ -1,10 +1,136 @@
-<p>Hello World</p>
-<h1>Goodbye World</h1>
-<h2>Hello World</h2>
-<h3>Goodbye World</h3>
-<h4>Hello World</h4>
-<h5>Goodbye World</h5>
-<h6>Hello World</h6>
-<p>Hello World</p>
-<p>Goodbye World</p>
-<p>Hello World</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alus Knödel Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0c5d2c 0%, #0c5d2c 50%, #e7350f 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #0c5d2c, #e7350f);
+        }
+
+        h1 {
+            color: #0c5d2c;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(12, 93, 44, 0.1);
+        }
+
+        .message {
+            color: #333;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            text-align: left;
+        }
+
+        .highlight {
+            color: #e7350f;
+            font-weight: 600;
+        }
+
+        .knodel-invite {
+            background: linear-gradient(135deg, #0c5d2c, #0c5d2c);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+            box-shadow: 0 10px 20px rgba(12, 93, 44, 0.2);
+        }
+
+        .knodel-invite h2 {
+            color: white;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .contact-info {
+            background: #f8f9fa;
+            border-left: 4px solid #e7350f;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 25px;
+        }
+
+        .emoji {
+            font-size: 1.5rem;
+            margin: 0 5px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+                margin: 10px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .message {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Welcome! 🎉</h1>
+        
+        <div class="message">
+            <p><strong>You found Alus Knödel Page!</strong></p>
+            <br>
+            <p>I hope you had a <span class="highlight">fantastic wedding!!!</span></p>
+            <br>
+            <p>By visiting this site you are <span class="highlight">automatically invited</span> to a free Knödel experience at your place.</p>
+            <br>
+            <p>But please let us know what time you would like to invite us via the common messenger app.</p>
+        </div>
+
+        <div class="knodel-invite">
+            <h2>🥟 Free Knödel Experience 🥟</h2>
+            <p>We're excited to bring the authentic taste of our family recipe to your home!</p>
+        </div>
+
+        <div class="contact-info">
+            <p><strong>Questions about the recipe?</strong></p>
+            <p>Feel free to contact us anytime! 📱</p>
+        </div>
+    </div>
+</body>
+</html>
